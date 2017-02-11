@@ -1,0 +1,14 @@
+*{
+  font-family: "微软雅黑";
+}
+body{
+  background-image: url(../pic/pic1.jpg);
+  background-repeat: no-repeat;
+}
+.form-group input{
+  width: 350px;
+  opacity: 0.7;
+}
+button{
+  opacity: 0.7;
+}
