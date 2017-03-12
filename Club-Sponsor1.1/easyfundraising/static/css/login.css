@@ -1,0 +1,155 @@
+*{
+  font-family: "微软雅黑";
+
+}
+
+body{
+  font-family: "museo-sans-rounded", "Helvetica Neueu", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #a09ea2;
+  background-color: #fff;
+  background-repeat: no-repeat;
+
+}
+.bg-white {
+    background: #fff;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 970px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.page-header {
+    padding-bottom: 0px;
+    margin: 10px 0 5px;
+    border-bottom: 1px solid #eee;
+}
+.navbar-primary {
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+}
+.navbar {
+    position: relative;
+    min-height: 20px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+.navbar a{
+  text-decoration: none;
+}
+.navbar-toggle,.nav {
+    display:block;
+}
+#header-navbar-collapse,.collapse navbar-collapse{
+  height: 80px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+     background-color: transparent;
+}
+.pb8 {
+    padding-bottom: 1rem;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.pt6 {
+    padding-top: 3.125rem;
+}
+.col-md-offset-3 {
+    margin-left: 25%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-sm-12{
+  color: #36434d;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+label {
+    font-size: 14px;
+    color: #36434d;
+    font-weight: 700;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+label {
+    cursor: default;
+}
+.form-control, .form-control:focus {
+    box-shadow: none;
+}
+.form-control {
+    padding: 7px 15px;
+    font-size: 0.875rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 52px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #8599a9;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #D6D6E2;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.btn-block{
+  width: 350px;
+  opacity: 0.7;
+  height: 52px;
+}
+
+input[type="submit"] {
+    font-size: 0.875rem;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+button{
+  opacity: 0.7;
+}
+.footer{
+  width: 200px;
+  margin-left:45% ;
+}
+.footer a{
+  text-decoration: none;
+}
+#hi_user{
+  font-family:"微软雅黑";
+  color: rgb(51,51,51);
+  float: right;
+  margin-top: 20px;
+  font-size: 16px;
+}

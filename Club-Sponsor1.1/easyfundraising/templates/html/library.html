@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>CLUB SPOPNSOR</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 引入 Bootstrap -->
+      <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/static/css/library.css" rel="stylesheet">
+
+
+   </head>
+   <body>
+     <div class="container">
+    	<div class="row clearfix">
+    		<div class="col-md-12 column">
+          <nav class="navbar navbar-primary">
+            <!-- 标题 -->
+            <div class="page-header">
+              <h1>CLUB SPONSOR
+                <small>Oxygen</small>
+                <div id="hi_user"></div>
+              </h1>
+
+            </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- 导航 -->
+            <div id="header-navbar-collapse" class="collapse navbar-collapse">
+              <div class=" navbar-right">
+                <ul class="nav navbar-nav">
+                  <li class=""><a href="/home">Home</a></li>
+                  <li class=""><a href="/library">Library</a></li>
+                  <li class="active"><a href="/login">Login</a></li>
+                </ul>
+              </div>
+            </div><!-- /.navbar-collapse -->
+
+          </nav>
+          <!-- 正文 -->
+    			<!-- <div class="jumbotron">
+    				<h1>
+    					Club Sponsor
+              <small>Show details</small>
+    				</h1>
+    				<p>
+    					This is for club sponsor.You can find what you want.
+    				</p>
+    				<p>
+    					Come on and go for it.
+    				</p>
+    				<p>
+    					 <a class="btn btn-primary btn-large" href="#">Learn more</a>
+    				</p>
+
+    			</div> -->
+
+
+
+          <div class="tabbable" id="tabs-807041">
+    				<ul class="nav nav-tabs">
+    					<li class="active">
+    						<a href="#panel-307158" data-toggle="tab">社团</a>
+    					</li>
+    					<li>
+    						<a href="#panel-877214" data-toggle="tab">商户</a>
+    					</li>
+              <li>
+    						<a href="#panel-666666" data-toggle="tab">发表</a>
+    					</li>
+    				</ul>
+    				<div class="tab-content">
+              <!-- 社团发布的信息 -->
+    					<div class="tab-pane active" id="panel-307158">
+
+                <ul id="thumbnails">
+          				<!-- js中添加相应的div
+                  显示用户发表的内容 -->
+      			    </ul>
+
+    					</div>
+
+              <!-- 商户已发布的信息 -->
+    					<div class="tab-pane" id="panel-877214">
+    						<p>
+    							第二部分内容.
+    						</p>
+    					</div>
+
+              <!-- 发布自己的信息 -->
+              <div class="tab-pane" id="panel-666666">
+
+                <form action="/ItemList/" method="POST" enctype="multipart/form-data" class="form-horizontal" novalidate>
+                  {% csrf_token %}
+                  <fieldset>
+
+                    <!-- 发表信息title -->
+                    <div class="form-group ">
+                      <label class="col-sm-2 control-label ">Title</label>
+                      <div class="col-sm-10">
+                        <input name="title" class="form-control" type="text">
+                      </div>
+                    </div>
+                    <!-- 发表信息内容Contents -->
+                    <div class="form-group ">
+                      <label class="col-sm-2 control-label ">Contents</label>
+                      <div class="col-sm-10">
+                        <textarea name="contents" class="form-control" rows="10" ></textarea>
+                      </div>
+                    </div>
+                    <!-- 发表信息联系方式Contacts -->
+                    <div class="form-group ">
+                      <label class="col-sm-2 control-label ">Contacts</label>
+                      <div class="col-sm-10">
+                        <input name="contacts" class="form-control" type="text">
+                      </div>
+                    </div>
+                    <!-- 发表信息作者Author -->
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label ">Author</label>
+                      <div class="col-sm-10">
+                        <input name="author" class="form-control" id="auth_input" >
+                      </div>
+                    </div>
+                    <!-- 发表作者的身份类别 社团or商户 -->
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label ">Kind</label>
+                      <div class="col-sm-10">
+                        <select id="ident_sel" class="form-control" name="kind">
+                          <option value="1" >社团</option>
+                          <option value="2" >商户</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-actions">
+                      <button class="btn btn-primary" id="sub_but">Submit</button>
+                    </div>
+
+                  </fieldset>
+                </form>
+
+
+              </div>
+
+    				</div>
+			    </div>
+
+
+
+  				<!-- <ul>
+  				{% for item in items %}
+  					<li>{{item.title}}</li>
+  					{% endfor %}
+  				</ul> -->
+
+
+          <!-- 页脚 -->
+          <div class="footer">
+            <a href="#">oxygen工作室出品</a>
+          </div>
+
+    		</div>
+    	</div>
+    </div>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/library.js"></script>
+   </body>
+</html>

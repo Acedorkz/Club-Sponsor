@@ -1,0 +1,77 @@
+*{
+  font-family: "微软雅黑";
+  font-size: 16px;
+}
+ul{
+  list-style-type: none;
+}
+.container {
+    width: 1100px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.page-header {
+    padding-bottom: 0px;
+    margin: 10px 0 5px;
+    border-bottom: 1px solid #eee;
+}
+.navbar-primary {
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+}
+.navbar {
+    position: relative;
+    min-height: 20px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+.navbar a{
+  text-decoration: none;
+}
+.navbar-toggle,.nav {
+    display:block;
+}
+#header-navbar-collapse,.collapse navbar-collapse{
+  height: 80px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+     background-color: transparent;
+}
+.footer{
+  width: 200px;
+  margin-top:20px;
+  margin-left: 47%;
+}
+.footer a{
+  text-decoration: none;
+}
+.tab-content{
+  margin-top: 20px;
+}
+#panel-666666{
+  width: 900px;
+}
+.btn-primary{
+  margin-left: 50%;
+}
+#auth_input{
+  width: 100px;
+
+}
+#sub_but{
+  margin-left: 50%;
+}
+#hi_user{
+  font-family:"微软雅黑";
+  color: rgb(51,51,51);
+  float: right;
+  margin-top: 20px;
+}
+#ident_sel{
+  width: 100px;
+}
