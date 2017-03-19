@@ -5,8 +5,9 @@ from ckeditor_uploader.fields import RichTextUploadingField
 from django.db import models
 
 
-# Create your models here.
 
+
+# Create your models here.
 class User(models.Model):
     username = models.CharField('用户名',max_length=30)
     password = models.CharField('密码',max_length=30)
@@ -15,11 +16,19 @@ class User(models.Model):
         return self.username
    
 class Item(models.Model):
-    author = models.ForeignKey(User,related_name='items',default=0)
-    title = models.CharField(max_length=30)
-    contents =RichTextUploadingField("contents")
+    choice=(('club','社团'),
+                    ('market','商家'),)
+    kind = models.CharField(max_length=4,choices=choice,default='club',)
+    author = models.CharField('作者',max_length=20)
+    title = models.CharField('题目',max_length=30)
+    contents =RichTextUploadingField("内容")
     pubtime = models.DateTimeField(auto_now=True)
-    contacts = models.CharField(max_length=50)
+    contacts = models.CharField('联系方式',max_length=50)
+    class Meta:
+        ordering=['pubtime']
+        
+        
+    
     def __unicode__(self):
         return self.title
 class UserDetail(models.Model):
